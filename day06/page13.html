@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pwcheck() {
+            pw = document.getElementById('pw').value
+            pwcheck = document.getElementById('pwcheck').value
+            if (pw == pwcheck) {
+                result.innerHTML = '<font color = green>비밀번호가 일치합니다</font>'
+            } else {
+                result.innerHTML = '<font color = red>비밀번호가 일치하지 않습니다</font>'
+            }
+        }
+    </script>
+</head>
+<body>
+    비밀번호 <input type="text" id="pw">
+    <br>
+    비밀번호 확인 <input type="text" id="pwcheck" onblur="pwcheck()">
+    <br>
+    <div id="result"></div>
+</body>
+</html>

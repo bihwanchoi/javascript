@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function answer() {
+            answer = document.getElementById("answer").value
+            if (answer == 77) {
+                result.innerHTML = '<font color = blue>정답입니다</font>'
+            } else {
+                result.innerHTML = '<font color = red>틀렸습니다</font>'
+            }
+        }
+    </script>
+</head>
+<body>
+    정답: <input type="text" id="answer" onblur="answer()">
+    <br>
+    <div id="result"></div>
+</body>
+</html>
